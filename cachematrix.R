@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) {
      return(m)
    }
    data<-x$ger()
-   m<-t(data,...)
+   m<-solve(data,...)
    x$setinverse(m)
    m
 }
